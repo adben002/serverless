@@ -1,0 +1,100 @@
+{
+  "name": "adben002-serverless",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Master package.json, the superset of all dependencies for all of the _example package.json files. See _boilerplate/package.json for example npm scripts.",
+  "scripts": {
+    "build:webpack": "npm prune && npm install && rimraf dist/* && webpack --config config/web/webpack.web.js --progress --profile",
+    "build:serverless": "npm run build:webpack && serverless deploy",
+    "build:remove": "serverless remove"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+
+
+    "typescript": "~2.4",
+    "rxjs": "^5",
+    "zone.js": "^0",
+    "rimraf": "^2",
+
+
+    "@angular/common": "^5",
+    "@angular/compiler": "^5",
+    "@angular/compiler-cli": "^5",
+    "@angular/core": "^5",
+    "@angular/forms": "^5",
+    "@angular/http": "^5",
+    "@angular/platform-browser": "^5",
+    "@angular/platform-browser-dynamic": "^5",
+    "@angular/platform-server": "^5",
+    "@angular/animations": "^5",
+    "@angular/router": "^5",
+    "@angular/upgrade": "^5",
+
+
+    "@types/angular": "^1",
+    "@types/angular-animate": "^1",
+    "@types/angular-cookies": "^1",
+    "@types/angular-mocks": "^1",
+    "@types/angular-resource": "^1",
+    "@types/angular-route": "^1",
+    "@types/angular-sanitize": "^1",
+    "@types/aws-iot-device-sdk": "^2",
+    "@types/jasmine": "^2",
+    "@types/node": "^8",
+
+
+    "serverless": "^1",
+    "serverless-offline": "^3",
+    "serverless-plugin-webpack": "^1",
+    "serverless-plugin-write-env-vars": "^1",
+    "serverless-s3-deploy": "^0",
+    "serverless-webpack": "^4",
+    "serverless-cognito-user-setup": "^0",
+
+    "source-map-explorer": "^1",
+    "style-loader": "^0",
+    "systemjs": "^0",
+    "ts-node": "^3",
+    "tslint": "^5",
+    "webpack": "^3",
+    "webpack-dev-server": "^2",
+    "webpack-merge": "^4",
+    "babel-minify-webpack-plugin": "^0",
+    "compression-webpack-plugin": "^1",
+    "copy-webpack-plugin": "^4",
+    "css-loader": "^0",
+    "extract-text-webpack-plugin": "^3",
+    "file-loader": "^1",
+    "html-loader": "^0",
+    "html-webpack-plugin": "^2",
+    "angular-router-loader": "^0",
+    "angular2-template-loader": "^0",
+    "awesome-typescript-loader": "^3",
+    "babel-cli": "^6",
+    "babel-loader": "^7",
+    "babel-preset-angular2": "^0",
+    "babel-preset-env": "^1",
+    "null-loader": "^0",
+    "raw-loader": "^0",
+    "rollup": "^0",
+    "rollup-plugin-commonjs": "^8",
+    "rollup-plugin-node-resolve": "^3",
+    "rollup-plugin-uglify": "^2",
+
+
+    "amazon-cognito-identity-js": "^1",
+    "aws-iot-device-sdk": "^2",
+    "aws-sdk": "^2",
+    "canonical-path": "^0",
+    "concurrently": "^3",
+    "core-js": "^2",
+    "jsonwebtoken": "^8",
+    "jwk-to-pem": "^1",
+    "lodash": "^4",
+    "request": "^2"
+
+  }
+}
